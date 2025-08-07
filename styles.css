@@ -18,6 +18,8 @@
 }
 Colors: 
 color: #C8B6FE;
+Darker color:#db237f;
+#493585;
 */
 
 /* The body */
@@ -32,7 +34,7 @@ color: #C8B6FE;
 header{
     display:flex;
     flex-direction: column;
-    background-color:#C8B6FE;
+    background-color:#ffbae0;
     color: rgb(255, 255, 255);
     /* justify-content:flex-start ;
     align-items: center; */
@@ -55,11 +57,13 @@ nav ul{
     display: flex;
     gap:20px;
     padding-right:20px;
-    color:#a182fd;
+    color:#ffbae0;
     align-items: center;
 }
-a{
+nav a{
 text-decoration: none;
+color:#db237f;
+font-weight: 300;
 }
 
 /* This it the overview column */
@@ -67,7 +71,7 @@ text-decoration: none;
 
 .over-view{
     display: flex;
-    background-color:#C8B6FE;
+    background-color:#ffbae0;
     justify-content: space-between;
     /* border: 1px solid red ; */
     padding:20px 0;
@@ -81,7 +85,7 @@ text-decoration: none;
   color: white;
   /* I set is as one so the basis will take up the space
   but the paragraph will stop at 900px */
-  flex:2;
+  flex:1;
   
 }
 
@@ -99,26 +103,185 @@ text-decoration: none;
 }
 
 .over-view-one button{
-   background-color:#7350dd;
+   background-color:#db237f;
    color: white;
    border-radius: 100px;
    padding: 8px;
-   border: 2px solid #7350dd;
+   border: 2px solid #db237f;
    margin-top: 10px;
   
 }
 
 .over-view-two{
     display: flex;
-    flex: 1;
     justify-content: center;
+   /* border:1px solid red; */
 }
 
 .over-view-two img{
-    width: 400px;
+    /* so we can shrink it to 0 width I put the
+    min as 0 and the max cannot go beyond 400 */
+    min-width:0px;
+    max-width: 400px;
+    /* consuming 100%  of the width ensures that
+    when we change the shape it takes up that space, it will
+    fill 100% but as we have the constraints it will stop
+    at 400px*/
+    width: 100%;
     border-radius: 20px;
+}
+/* this is the main part */
+
+.sub-section-one{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin:20px;
+color: #db237f;
+
+}
+.sub-section-one h1{
+    margin-bottom:20px;
+}
+.sub-image-container{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    gap: 30px;
+    /* The content we want to push down should
+    have the flex wrap */
+    flex-wrap:wrap;
+}
+.sub-image-container img{
+    width: 150px;
+    border-radius: 30px;
+    border: 1px solid rgb(204, 202, 202);
+}
+.sub-image-container li{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.price{
+   display: flex;
+   margin:10px;
     
 }
-.sub-part-one img{
-    width:200px;
+.price p{
+    align-self: center;
+    color: #db237f;
+    font-style: bold;
+    flex:1;
+}
+.price button{
+    flex:1;
+    padding:5px;
+    align-self: flex-start;
+    background-color:#db237f;
+    color: white;
+    border-radius: 50px;
+    border: 2px solid #db237f;
+  
+}
+/* This iss the second main section */
+.sub-section-two{
+ background-color:#f7f1e0;
+ padding: 70px 0;
+ margin: 100px 0;
+}
+.section-two-images{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.images-2{
+   display: flex;
+   justify-content: center;
+}
+.section-two-images img{
+    width:100px;
+   
+}
+.section-two-images li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #db237f;
+    flex: 1;
+    
+}
+.section-two-images h2{
+    text-align: center;
+}
+.sub-section-three{
+    display: flex;
+    margin: 100px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-three-notf{
+    background-color: #db237f;
+    padding: 20px 50px;
+    border-radius: 20px;
+    flex:1;
+    max-width: 700px;
+    display: flex;
+    color: #ffffff;
+    border: 1px solid #ff92c8;
+    
+}
+.notf-text{
+  margin-right: auto;
+  flex:2;  
+}
+.notf{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+.notf button{
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: #db237f;
+    border: 1px solid #ff92c8;
+    color: #ffffff;
+    flex:1;
+}
+/* This is the footer */
+footer{
+    background-color:#ffbae0;
+    display: flex;
+    justify-content: flex-start;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.footer-image img{
+    width:100px;
+  border-radius: 10px;
+}
+.footer-image{
+  display: flex;
+  margin:20px;
+}
+.footer-Social, .footer-Contact{
+ display: flex;
+ flex-direction: column;
+ justify-content:flex-start;
+ margin-top: 20px;
+ flex: auto;
+ padding:0px;
+ color: #db237f;
+
+}
+.footer-Social img{
+    width:30px;
+}
+.footer-Contact a{
+text-decoration: none;
+color: #db237f;
 }
