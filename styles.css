@@ -1,0 +1,124 @@
+/* This is for the font
+.libertinus-sans-regular {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libertinus-sans-bold {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.libertinus-sans-regular-italic {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+Colors: 
+color: #C8B6FE;
+*/
+
+/* The body */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    font-family: "Libertinus Sans", sans-serif;
+}
+
+/* The navigation in the header */
+header{
+    display:flex;
+    flex-direction: column;
+    background-color:#C8B6FE;
+    color: rgb(255, 255, 255);
+    /* justify-content:flex-start ;
+    align-items: center; */
+    padding: 0 20px;
+}
+
+.main-head{
+    display:flex;
+    /* border: 1px solid red; */
+    font-weight: 900px;
+    justify-content: space-between;
+    padding-top:20px;
+}
+
+header h1{
+    font-size: 24px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap:20px;
+    padding-right:20px;
+    color:#a182fd;
+    align-items: center;
+}
+a{
+text-decoration: none;
+}
+
+/* This it the overview column */
+
+
+.over-view{
+    display: flex;
+    background-color:#C8B6FE;
+    justify-content: space-between;
+    /* border: 1px solid red ; */
+    padding:20px 0;
+    gap: 20px;
+}
+.over-view-one{
+  display: flex;
+  flex-direction:column ;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  /* I set is as one so the basis will take up the space
+  but the paragraph will stop at 900px */
+  flex:2;
+  
+}
+
+.over-view-one h1{
+    font-size: 48px;
+    font-weight: 900px;
+    color:#ffffff;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 8px;
+}
+.over-view-one p{
+    color: rgb(247, 239, 239);
+   max-width: 900px;
+}
+
+.over-view-one button{
+   background-color:#7350dd;
+   color: white;
+   border-radius: 100px;
+   padding: 8px;
+   border: 2px solid #7350dd;
+   margin-top: 10px;
+  
+}
+
+.over-view-two{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.over-view-two img{
+    width: 400px;
+    border-radius: 20px;
+    
+}
+.sub-part-one img{
+    width:200px;
+}
